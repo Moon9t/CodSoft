@@ -37,7 +37,7 @@ CodSoft/
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/CodSoft.git
+    git clone https://github.com/Moon9t/CodSoft.git
     cd CodSoft/Task1
     ```
 
