@@ -10,3 +10,14 @@ def prioritize_tasks(todo_list):
             print(f"Task '{task.title}' assigned {task.unique_feature}.")
         else:
             print(f"Task '{task.title}' already has feature: {task.unique_feature}.")
+import random
+
+def prioritize_tasks(todo_list):
+    priorities = ['Low', 'Medium', 'High', 'Critical']
+    for task in todo_list.tasks:
+        # Only update if not already set
+        if not task.unique_feature:
+            task.unique_feature = f"Priority: {random.choice(priorities)}"
+            print(f"Task '{task.title}' assigned {task.unique_feature}.")
+        else:
+            print(f"Task '{task.title}' already has feature: {task.unique_feature}.")
